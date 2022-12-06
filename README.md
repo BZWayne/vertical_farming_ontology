@@ -34,7 +34,7 @@ The list of classes of sub-classes used in Vertical Farming Ontology:
  * hasHumidity: The humidity of the Vertical Farming (string) to the humidity sensor 
  * hasTime: Assigns a time (string) to the Day Time for Light turned On
 
-![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/data_prop.png) 
+![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/data_props.png) 
 
 ##SWRL rules 
 
