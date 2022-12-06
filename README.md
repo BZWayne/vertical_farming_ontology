@@ -28,7 +28,7 @@ The list of classes of sub-classes used in Vertical Farming Ontology:
  - hasSensor: VerticalFarming hasSensor Sensors
  - inMode: VerticalFarming is inMode Mod
 
-![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/object_prop.png) 
+![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/objects_prop.png) 
 
 ## Data Properties 
  * hasTemperature: The temperature of the Vertical Farming (string) to the temperature sensor 
