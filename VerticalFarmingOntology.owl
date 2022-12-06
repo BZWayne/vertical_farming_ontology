@@ -1,0 +1,1393 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasPlant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasPlant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#inMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#inMode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#isReady -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#isReady">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PlantCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasFan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasFan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanMode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityMode"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasLight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasLight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightMode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasPump -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasPump">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpMode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Temperature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Time"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Basil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Basil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Tomato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanMode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanMode"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanMode"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityMode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumiditySensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightSensor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#TemperatureSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightMode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightMode"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOn"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightMode"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#TemperatureSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#NotReady -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#NotReady">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PlantCondition"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Ready"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PlantCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PlantCondition">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpMode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpMode"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpMode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Ready -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Ready">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PlantCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#TemperatureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Tomato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Tomato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Basil1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Basil1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Basil"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOff1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOff1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanMode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOff"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOn1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanMode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOn"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityHigh1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityHigh1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityLow1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityLow1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityMode1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityMode1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Humidity_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Humidity_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityMode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumiditySensor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+        <hasHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high</hasHumidity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOff1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOff1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightMode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOn"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOn1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightMode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOff"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Light_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Light_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightSensor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#NotReady1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#NotReady1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#NotReady"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PlantCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOff1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOff1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpMode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOn1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpMode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#TemperatureMode1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#TemperatureMode1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Mode"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Temperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Temperature_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Temperature_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Sensors"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#TemperatureSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Tomato1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Tomato1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Tomato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+        <hasHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high</hasHumidity>
+        <hasTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</hasTemperature>
+        <hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16</hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+        <hasHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</hasHumidity>
+        <hasTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</hasTemperature>
+        <hasTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#isReady1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#isReady1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PlantCondition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Ready"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LightOff</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTime"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOff"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FanOn</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTime"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FanOff</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTime"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOff"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LightOn</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTime"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#s"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOn"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IsNotReady</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#isReady"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#NotReady"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOn"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOn"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOff"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IsReady</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#isReady"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Ready"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#LightModeOff"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#FanModeOff"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOff"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PumpModeOn</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasPlant"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Basil1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTime"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOn"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PumpModeOff</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasPlant"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Tomato1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasHumidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTemperature"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasTime"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#PumpModeOff"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Humidity</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasPlant"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#d"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Tomato1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#inMode"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#HumidityLow1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SensorOn</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#VerticalFarming"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasPlant"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#Plant"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#hasSensor"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/bauka/ontologies/2022/11/untitled-ontology-9#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
