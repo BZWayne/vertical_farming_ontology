@@ -18,7 +18,6 @@ The list of classes of sub-classes used in Vertical Farming Ontology:
   * Plant: is a plant
   * PlantCondition: A plant condition: ready or not ready to pick
   * Sensors: A set of sensors: humiditySensor, temperatureSensor, lightSensor
-  * Control: The activity that will be used to control plant grow by using SWRL.
 
 ![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/classes.png) 
 
