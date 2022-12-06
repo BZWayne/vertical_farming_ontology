@@ -20,7 +20,7 @@ The list of classes of sub-classes used in Vertical Farming Ontology:
   * Sensors: A set of sensors: humiditySensor, temperatureSensor, lightSensor
   * Control: The activity that will be used to control plant grow by using SWRL.
 
-<!-- ![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/classes.png) -->
+<!-- ![image](https://github.com/BZWayne/vertical_farming_ontology/images/classes.png) -->
 
 ## Object Properties
  - hasPlant: a Vertical Farming hasPlant Plant
@@ -28,18 +28,18 @@ The list of classes of sub-classes used in Vertical Farming Ontology:
  - hasSensor: VerticalFarming hasSensor Sensors
  - inMode: VerticalFarming is inMode Mod
 
-<!-- ![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/object_prop.png) -->
+<!-- ![image](https://github.com/BZWayne/vertical_farming_ontology/images/object_prop.png) -->
 
 ## Data Properties 
  * hasTemperature: The temperature of the Vertical Farming (string) to the temperature sensor 
  * hasHumidity: The humidity of the Vertical Farming (string) to the humidity sensor 
  * hasTime: Assigns a time (string) to the Day Time for Light turned On
 
-<!-- ![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/data_prop.png) -->
+<!-- ![image](https://github.com/BZWayne/vertical_farming_ontology/images/data_prop.png) -->
 
 ##SWRL rules 
 
-<!-- ![image](https://github.com/BZWayne/vertical_farming_ontology/blob/main/images/swrl.png)
+<!-- ![image](https://github.com/BZWayne/vertical_farming_ontology/images/swrl.png)
 
     
 
